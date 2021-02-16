@@ -11,3 +11,5 @@ This method takes approximately 10 hours to build just the Table holding TypeIDs
 If anyone has a better method for building out this particular database, please let me know.
 
 Thanks.
+
+#EveOnline #python #noob
