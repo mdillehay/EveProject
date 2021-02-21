@@ -27,6 +27,8 @@ for i in tqdm(range(40)):
 for item in tqdm(id_list):
     esi_request = ('https://esi.evetech.net/latest/universe/types/' + str(item) + '/?datasource=tranquility&language=en-us')
     response = requests.get(esi_request)
+    # the TRY/EXCEPT is used here because occasionally there would be an error returned at the 'data = json.loads' step in the program and it would stop and essentially 
+    # erase all the work that had already been done
     try:
         data = json.loads(response.content)
     except Exception:
